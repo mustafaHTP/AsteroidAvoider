@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Movement Configs")]
+    [Space(2)]
     [SerializeField] private float _forceMagnitude;
     [SerializeField] private float _rotationVelocity;
     [SerializeField] private float _maxVelocity;
