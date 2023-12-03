@@ -5514,7 +5514,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f4b0b99f394922c4baa80c8fc5df233a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.6
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5641,7 +5641,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &533672832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8015,7 +8015,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _jetEngineSFX: {fileID: 1984574868}
   _minVolume: 0.2
-  _maxVolume: 0.5
+  _maxVolume: 0.4
   _volumeChangeSpeed: 1
 --- !u!95 &1644723285
 Animator:
