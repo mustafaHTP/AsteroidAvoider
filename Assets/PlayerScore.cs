@@ -18,7 +18,7 @@ public class PlayerScore : MonoBehaviour
     
     /// <summary>
     /// Instead of update score in every frame
-    /// update it only object destroyed
+    /// update only when object is disabled
     /// </summary>
     private void OnDisable()
     {
