@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -10,9 +8,6 @@ public class ScoreDisplayer : MonoBehaviour
 
     void Update()
     {
-        if (_playerScore != null)
-        {
-            _scoreTMP.text = Mathf.RoundToInt(_playerScore.Score).ToString();
-        }
+        _scoreTMP.SetText($"{Mathf.RoundToInt(_playerScore.Score)}");
     }
 }

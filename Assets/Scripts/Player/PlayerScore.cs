@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerScore : MonoBehaviour
@@ -14,8 +12,9 @@ public class PlayerScore : MonoBehaviour
     private void Update()
     {
         _score += _scoreMultiplier * Time.deltaTime;
+        PlayerPrefs.SetFloat(ScoreKey, _score);
     }
-    
+
     /// <summary>
     /// Instead of update score in every frame
     /// update only when object is disabled

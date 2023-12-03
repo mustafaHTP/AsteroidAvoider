@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,7 +6,9 @@ public class GameOverMenu : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _scoreTMP;
 
-    private void Start()
+    [SerializeField] private AdManager _adManager;
+
+    private void OnEnable()
     {
         DisplayScore();
     }
@@ -22,6 +22,11 @@ public class GameOverMenu : MonoBehaviour
     public void PlayAgain()
     {
         SceneManager.LoadScene("Scene_Game");
+    }
+
+    public void ContinueGame()
+    {
+        _adManager.ShowAd();
     }
 
     public void ReturnToMainMenu()

@@ -1,14 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent(out PlayerDeathHandler playerDeathHandler))
+        if (other.TryGetComponent(out PlayerHealth playerHealth))
         {
-            playerDeathHandler.ProcessCrash();
+            playerHealth.Crash();
         }
     }
 

@@ -17,6 +17,11 @@ public class AsteroidSpawner : MonoBehaviour
         _camera = Camera.main;
     }
 
+    private void OnEnable()
+    {
+        _isSpawning = false;
+    }
+
     private void Update()
     {
         if (!_isSpawning)

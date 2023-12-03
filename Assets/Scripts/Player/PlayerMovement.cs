@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -69,9 +67,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void KeepPlayerOnScreen()
     {
-        Vector2 bottomLeft = _camera.ViewportToWorldPoint(new Vector2(0f, 0f));
-        Vector2 topRight = _camera.ViewportToWorldPoint(new Vector2(1f, 1f));
-
         Border cameraBorder = _camera.GetBorder();
         Vector2 nextPosition = _playerRB.position;
 
