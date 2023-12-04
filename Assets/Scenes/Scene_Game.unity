@@ -352,7 +352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fd63a1965f39b44687f3798a9b8b466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerDeathHandler: {fileID: 1963250657}
+  _playerDeathHandler: {fileID: 1963250659}
 --- !u!4 &235929842
 Transform:
   m_ObjectHideFlags: 0
@@ -7743,7 +7743,6 @@ GameObject:
   - component: {fileID: 1644723280}
   - component: {fileID: 1644723284}
   - component: {fileID: 1644723285}
-  - component: {fileID: 1644723286}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -7859,7 +7858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71b9cd6370f4704428f485ef62917531, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerDeathHandler: {fileID: 1963250657}
+  _playerDeathHandler: {fileID: 1963250659}
 --- !u!114 &1644723284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7897,23 +7896,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1644723286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644723276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9433da85c92187f4da98b666f0ff70df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _minShapeAngle: 0
-  _maxShapeAngle: 1.8
-  _minStartLifeTime: 0.7
-  _maxStartLifeTime: 1.2
-  _effectChangeSpeed: 2
 --- !u!1 &1776365327
 GameObject:
   m_ObjectHideFlags: 0
@@ -8311,7 +8293,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1963250658}
-  - component: {fileID: 1963250657}
+  - component: {fileID: 1963250659}
   m_Layer: 0
   m_Name: PlayerDeathHandler
   m_TagString: Untagged
@@ -8319,23 +8301,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1963250657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963250656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42fd3db7e49604e40b8832c514a7f291, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameOverMenu: {fileID: 716077324}
-  _asteroidSpawner: {fileID: 533672831}
-  _scoreDisplay: {fileID: 2021898707}
-  _player: {fileID: 1644723276}
-  _enablingColliderDelay: 5
 --- !u!4 &1963250658
 Transform:
   m_ObjectHideFlags: 0
@@ -8351,6 +8316,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1963250659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963250656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851064f873cef4b42a27cbd6e524006e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameOverMenu: {fileID: 716077324}
+  _asteroidSpawner: {fileID: 533672831}
+  _scoreDisplay: {fileID: 2021898707}
+  _player: {fileID: 1644723276}
+  _enablingColliderDelay: 2
 --- !u!1 &1984574867
 GameObject:
   m_ObjectHideFlags: 0
