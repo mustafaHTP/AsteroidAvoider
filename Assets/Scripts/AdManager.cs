@@ -118,6 +118,7 @@ public class AdManager : MonoBehaviour
         // Raised when the ad failed to open full screen content.
         interstitialAd.OnAdFullScreenContentFailed += (AdError error) =>
         {
+            _playerDeathHandler.RespawnPlayer();
             LoadInterstitialAd();
             Debug.LogError("Interstitial ad failed to open full screen content " +
                            "with error : " + error);
