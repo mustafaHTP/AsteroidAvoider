@@ -2,6 +2,13 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
+    private AsteroidPool _asteroidPool;
+
+    public void Init(AsteroidPool asteroidPool)
+    {
+        _asteroidPool = asteroidPool;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent(out PlayerHealth playerHealth))
@@ -12,6 +19,6 @@ public class Asteroid : MonoBehaviour
 
     private void OnBecameInvisible()
     {
-        Destroy(gameObject);
+        _asteroidPool.Pool.Release(this);
     }
 }
